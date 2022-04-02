@@ -10,6 +10,8 @@
     <title>DrivenEats</title>
 </head>
 <body>
+
+      
     <header>
         <div class="topo">
             <h1>DrivenEats</h1>
@@ -24,17 +26,18 @@
                     <h2>Primeiro, seu prato</h2>
                 </div>
                 <div class="menu-produto">
-                    <div class="box-produto">             
+                    <div class="box-prato" onclick="selecionarPrato(this)">                                    
+                        
                         <img src="images/prato-strogonoff.jpg">
                         <p class="titulo-produto">Strogonoff da casa</p> 
-                        <p class="descricao-produto">Frango ao molho especial, Arroz e Batata Palha</p> 
-                        <div class="preco">R$ 14,90</div>
+                        <p class="descricao-produto">Frango ao molho especial, Arroz e Batata Palha</p>
+                        <p class="preco">R$ 14,90</p>                         
                         <div class="check escondido">
                             <ion-icon name="checkmark-outline"></ion-icon>
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-prato" onclick="selecionarPrato(this)">             
                         <img src="images/prato-feijoada.jpg">
                         <p class="titulo-produto">Feijoada da casa</p> 
                         <p class="descricao-produto">Feijão preto, Arroz, Couve, Farofa e Linguiça</p> 
@@ -44,7 +47,7 @@
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-prato" onclick="selecionarPrato(this)">             
                         <img src="images/prato-macarrao.jpg">
                         <p class="titulo-produto">Macarrão da casa</p> 
                         <p class="descricao-produto">Macarrão ao molho bolonhesa e Almondegas</p> 
@@ -54,7 +57,7 @@
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-prato" onclick="selecionarPrato(this)">             
                         <img src="images/prato-bobodecamarao.jpg">
                         <p class="titulo-produto">Bobo de camarão</p> 
                         <p class="descricao-produto">Bobo de camarão e Arroz </p> 
@@ -64,7 +67,7 @@
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-prato" onclick="selecionarPrato(this)">             
                         <img src="images/prato-lasanha.jpg">
                         <p class="titulo-produto">Lasanha de carne</p> 
                         <p class="descricao-produto">Lasanha de carne, Arroz e Vinagrete</p> 
@@ -78,8 +81,8 @@
                 <div class="titulo-categoria">
                     <h2>Agora, sua bebida</h2>
                 </div>
-                <div class="menu-produto">
-                    <div class="box-produto">             
+                <div class="menu-produto bebida">
+                    <div class="box-bebida" onclick="selecionarBebida(this)">             
                         <img src="images/bebida-guarana.png">
                         <p class="titulo-produto">Guaraná Antártica</p> 
                         <p class="descricao-produto">Lata 350mL</p> 
@@ -89,7 +92,7 @@
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-bebida" onclick="selecionarBebida(this)">             
                         <img src="images/bebida-cocacola.png">
                         <p class="titulo-produto">Coca-Cola</p> 
                         <p class="descricao-produto">Lata 350mL</p> 
@@ -99,7 +102,7 @@
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-bebida" onclick="selecionarBebida(this)">             
                         <img src="images/bebida-suco.jpg">
                         <p class="titulo-produto">Suco Del Valle</p> 
                         <p class="descricao-produto">Lata 350mL</p> 
@@ -109,7 +112,7 @@
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-bebida" onclick="selecionarBebida(this)">             
                         <img src="images/bebida-chagelado.png">
                         <p class="titulo-produto">Chá Gelado Leão</p> 
                         <p class="descricao-produto">Garrafa 400mL</p> 
@@ -119,7 +122,7 @@
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-bebida" onclick="selecionarBebida(this)">             
                         <img src="images/bebida-agua.jpg">
                         <p class="titulo-produto">Água Mineral</p> 
                         <p class="descricao-produto">Copo 300mL</p> 
@@ -133,8 +136,8 @@
                 <div class="titulo-categoria">
                     <h2>Por fim, sua sobremesa</h2>
                 </div>
-                <div class="menu-produto">
-                    <div class="box-produto">             
+                <div class="menu-produto sobremesa">
+                    <div class="box-sobremesa" onclick="selecionarSobremesa(this)">             
                         <img src="images/sobremesa-pettitgateau.jpg">
                         <p class="titulo-produto">Pettit Gateau</p> 
                         <p class="descricao-produto">Bolo com chocolate, acompanha duas bolas de sorvete</p> 
@@ -144,7 +147,7 @@
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-sobremesa" onclick="selecionarSobremesa(this)">             
                         <img src="images/sobremesa-tortagelada.jpg">
                         <p class="titulo-produto">Torta gelada</p> 
                         <p class="descricao-produto">Um pedaço de torta gelada de chocolate misto</p> 
@@ -154,7 +157,7 @@
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-sobremesa" onclick="selecionarSobremesa(this)">             
                         <img src="images/sobremesa-rocambole.jpg">
                         <p class="titulo-produto">Rocambole da casa</p> 
                         <p class="descricao-produto">Um pedaço de rocambole prestígio</p> 
@@ -164,7 +167,7 @@
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-sobremesa" onclick="selecionarSobremesa(this)">             
                         <img src="images/sobremesa-pudim.png">
                         <p class="titulo-produto">Pudim Condensado</p> 
                         <p class="descricao-produto">Um pedaço de pudim de leite condensado</p> 
@@ -174,7 +177,7 @@
                         </div>  
                     </div>
 
-                    <div class="box-produto">             
+                    <div class="box-sobremesa" onclick="selecionarSobremesa(this)">             
                         <img src="images/sobremesa-mousse.png">
                         <p class="titulo-produto">Mousse Maracujá</p> 
                         <p class="descricao-produto">Mousse de Maracujá 400g</p> 
@@ -193,11 +196,12 @@
             <div class="botao-pedido">
                 <p>Selecione os 3 itens para fechar o pedido</p>
             </div>
-            <div class="botao-pedido-final escondido">
+            <div class="botao-pedido-final escondido" onclick="botaoWhatsapp()">
                 <p>Fechar pedido</p>
             </div>
         </div>
     </footer>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

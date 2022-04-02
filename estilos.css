@@ -33,9 +33,7 @@
     margin-top: 92px;
     padding-left: 19px;
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    overflow-x: scroll;     
+    flex-direction: column;        
 }
 
 
@@ -45,29 +43,28 @@
     margin-bottom: 17px;
 }
 
-.menu-produto{
-    background-color: orangered;
-    width: 930px;
+.menu-produto{    
     height: 216px;
     display: flex;
     justify-content: space-between;
-    overflow-x: scroll;    
+    overflow: hidden;
+    overflow-x: scroll;   
 }
 
-.box-produto{
+.box-prato, .box-bebida, .box-sobremesa{
     background-color: #FFFFFF;
     width: 172px;
     height: 216px;
     padding: 18px 14px 0 14px;    
+    margin-right: 17px;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px; 
-    position: relative;  
-    
+    position: relative;      
 }
 
-.box-produto img{
+.box-prato img, .box-bebida img, .box-sobremesa img{
     width: 144px;
     height: 87px;
     border-radius: 4px;
@@ -88,7 +85,7 @@
     font-size: 15px;
     font-weight: 300;
     margin-bottom: 8px;
-    line-height: 16px;
+    line-height: 16px;    
 }
 
 .preco{
@@ -99,7 +96,6 @@
     position: absolute;
     bottom: 10px;
     left: 14px;
-    background-color: red;
 }
 
 .check{
@@ -114,7 +110,7 @@
     border-radius: 10px;
 }
 
-.borda-selecao{
+.selecionado{
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 }
 
@@ -166,7 +162,11 @@
     font-size: 20px;
 }
 
-.borda-selecao{
+button {
+    margin: 0;
+}
+
+.selecionado{
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 }
 
@@ -185,4 +185,15 @@ h2{
     color: #333333;
     font-size: 26px;
     font-family: 'Righteous', cursive;
+}
+
+.confirmacao{
+    
+    position: absolute;
+    z-index: 2;
+    background-color: red;
+}
+
+body{
+    position: relative;
 }
